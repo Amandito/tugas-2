@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class DetailData extends StatelessWidget {
-  final String namaMhs;
-  final String nimMhs;
-  final int tahunLahir;
+  final String namaMahasiswa;
+  final String nimMahasiswa;
+  final int tahunLhr;
   const DetailData(
       {Key? key,
-      required this.namaMhs,
-      required this.nimMhs,
-      required this.tahunLahir})
+      required this.namaMahasiswa,
+      required this.nimMahasiswa,
+      required this.tahunLhr})
       : super(key: key);
 
   @override
@@ -22,7 +22,7 @@ class DetailData extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                  "Nama saya $namaMhs, NIM $nimMhs, dan umur saya adalah ${DateTime.now().year - tahunLahir} tahun")
+                  "Nama saya $namaMahasiswa, NIM $nimMahasiswa, dan umur saya adalah ${DateTime.now().year - tahunLhr} tahun")
             ],
           ),
         ));
